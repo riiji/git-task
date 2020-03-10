@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="branchTest.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="Calculator_Should.cs" />
     <Compile Include="file.cs" />
