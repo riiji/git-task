@@ -75,14 +75,5 @@ namespace Kontur.Courses.Git
 		}
 
 
-		[Test]
-		public void OneArg_BadInput()
-		{
-			var calc = new Calculator();
-			calc.Calculate(new[] { "5" });
-			Assert.IsFalse(calc.Calculate(new[] { "asd" }).HasValue);
-			Assert.AreEqual(5.0, calc.Calculate(new string[] { }).Value);
-		}
-
 	}
 }
