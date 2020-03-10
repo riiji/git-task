@@ -60,6 +60,6 @@
 
 1. Перейдите в ветку `handleErrors`
 2. Сделайте hard reset на `base/handleErrors`  
-`git reset --hard base/handleErrors`
+`git reset --hard base/handleErrors` 
 3. Сделайте mixed reset на `origin/handleErrors`. Посмотрите на состояние директории и на diff с последним коммитом  
 `git reset --mixed origin/handleErrors` 
