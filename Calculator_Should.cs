@@ -6,7 +6,7 @@ namespace Kontur.Courses.Git
 	[TestFixture]
 	public class Calculator_Should
 	{
-		private Calculator calc;
+		private Calculator calc;  
 
 		[SetUp]
 		public void SetUp()
