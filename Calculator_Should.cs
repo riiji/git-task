@@ -65,6 +65,19 @@ namespace Kontur.Courses.Git
 			Assert.AreEqual(5.0, calc.Calculate(new string[] { }).Value);
 		}
 
+		[TestCase("asd", "+", "2")]
+		[TestCase("2", "+", "asd")]
+		[TestCase("asd", "+", "asd")]
+		[TestCase("asd", "asd", "asd")]
+		[TestCase("2", "asd", "3")]
+		public void ThreeArg_BadInput(params string[] args)
+		{
+			var calc = new Calculator();
+			calc.Calculate(new[] { "5" });
+			Assert.IsFalse(calc.Calculate(args).HasValue);
+			Assert.AreEqual(5.0, calc.Calculate(new string[] { }).Value);
+		}
+
 		[Test]
 		public void OneArg_BadInput()
 		{
