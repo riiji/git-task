@@ -4,6 +4,6 @@ namespace Kontur.Courses.Git
 	{
 		// some shit code
 		// again some shit code
-		// some commit
+		// some commit;
 	}
 }
